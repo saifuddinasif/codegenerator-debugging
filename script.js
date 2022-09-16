@@ -10,6 +10,8 @@ const getElement = (id) => {
 const handleSlider = (event) => {
   const charCountEl = getElement("char-count");
   charCountEl.innerText = event;
+
+  generatePassword()
 };
 
 const handleCheckbox = () => {
