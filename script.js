@@ -30,9 +30,9 @@ const handleCheckbox = () => {
 };
 
 const generatePassword = () => {
-  const passwordEl = getElement("pass");
+  const passwordEl = getElement("password");
 
-  const charCount = getElement("char-count");
+  const charCount = getElement("char-count").innerText;
 
   let password = "";
 
