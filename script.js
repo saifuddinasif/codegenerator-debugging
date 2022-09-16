@@ -36,12 +36,12 @@ const generatePassword = () => {
 
   let password = "";
 
-  for (let i = 0; i < charCount.length; i++) {
+  for (let i = 0; i < charCount; i++) {
     const randomNumber = Math.floor(Math.random() * charSet.length);
     password += charSet.substring(randomNumber, randomNumber + 1);
   }
 
-  passwordEl.innerText = password;
+  passwordEl.value = password;
 };
 
 const handleViewPassword = () => {
